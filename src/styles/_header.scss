@@ -1,0 +1,12 @@
+@use './variables/cor' as cor;
+@use './variables/neon' as neon;
+
+.text-neon {
+    @include neon.text-neon(cor.$neon-purple);
+}
+
+header {
+    border-bottom: 2px solid cor.$neon-pink; 
+    padding-bottom: 1rem; 
+    margin-bottom: 2rem; 
+}

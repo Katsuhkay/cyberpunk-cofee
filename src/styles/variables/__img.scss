@@ -1,0 +1,14 @@
+@use './cor' as cor;
+@use './neon' as neon;
+
+
+* {
+    img {
+        border-radius: 8px;
+        border: 8px solid cor.$neon-purple;
+    }
+}
+
+.img-fluid {
+    @include neon.border-neon(cor.$neon-purple);
+}

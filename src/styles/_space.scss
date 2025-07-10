@@ -1,0 +1,31 @@
+@use './variables/neon' as neon;
+@use './variables/cor' as cor;
+
+.space {
+    padding-top: 2rem;
+
+    border-top: 2px solid cor.$neon-purple;
+    padding-bottom: 1rem; 
+    margin-bottom: 2rem;
+
+    .chefs-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
+        img {
+        max-width: 30%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px cor.$neon-green;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05); // efeito suave ao passar o mouse
+        }
+        }
+    }
+}

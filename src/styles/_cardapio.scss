@@ -1,0 +1,7 @@
+@use './variables/neon' as neon;
+@use './variables/cor' as cor;
+
+
+.border-item {
+    @include neon.border-neon(cor.$neon-purple);
+}

@@ -1,0 +1,20 @@
+@use './variables/cor' as cor;
+@use './variables/neon' as neon;
+@use './header';
+@use './variables/btn';
+@use './variables/_img';
+@use './cardapio';
+@use './space';
+@use './retro';
+@use './hero';
+@use './localizacao';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cor.$dark-bg;
+}

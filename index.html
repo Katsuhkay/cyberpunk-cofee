@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Café Cyberpunk</title>
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="dist/libs/css/bootstrap.min.css" />
+    <!-- Seu CSS compilado -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+</head>
+
+<body class="bg-dark text-light">
+    <header class="container py-4 text-center">
+        <h1 class="display-4 text-neon" style="color: #FF0080;">Café Cyberpunk</h1>
+        <p class="lead" style="color: #00FFF7;">O futuro do sabor, hoje.</p>
+    </header>
+
+    <div class="hero">
+        <div class="container text-center">
+            <h2 class="text-neon" style="color: #8A2BE2;">Bem-vindo ao Café Cyberpunk</h2>
+            <p class="lead" style="color: #00FFFF;">Experimente o melhor da cultura cyberpunk com nossos cafés e delícias neon.</p>
+            <div class="hero__local-img">
+                <img src="./src/images/local.jpg" alt="Café Cyberpunk" class="img-fluid mb-4" />
+            </div>
+            <br>
+            <button id="btnToggleMenu" class="btn hero__btn btn-primary btn-lg">Ver Cardápio</button>
+        </div>
+    </div>
+
+    <section id="menu" class="my-5">
+        
+    <h2 class="mb-4 text-neon" style="color: #8A2BE2;">Nosso Cardápio</h2>
+    <div class="row g-4">
+        
+        <!-- Item 1 -->
+        <div class=" col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/cafe.jpg" class="card-img-top" alt="Neon Espresso">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #FF1493;">Neon Espresso</h5>
+                <p class="card-text">
+                    Espresso intenso com toque de chocolate amargo e neon syrup de framboesa.
+                </p>
+                <p class="fw-bold text-success">R$ 8,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/latte].jpg" class="card-img-top" alt="Hack Latte">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #00FFFF;">Hack Latte</h5>
+                <p class="card-text">
+                    Leite vaporizado com café suave, essência de baunilha e um toque de menta.
+                </p>
+                <p class="fw-bold text-success">R$ 12,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/mocha.jpg" class="card-img-top" alt="Synthwave Mocha">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #FFD700;">Synthwave Mocha</h5>
+                <p class="card-text">
+                    Mocha com leite de amêndoas, cobertura de neon de caramelo e pitadas de canela.
+                </p>
+                <p class="fw-bold text-success">R$ 14,50</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/frappe.jpg" class="card-img-top" alt="Cyber Frappe">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #00FF7F;">Cyber Frappe</h5>
+                <p class="card-text">
+                    Bebida gelada com café, leite condensado e neon cream de hortelã.
+                </p>
+                <p class="fw-bold text-success">R$ 15,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/brownies.jpg" class="card-img-top" alt="Fusion Brownie">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #FF4500;">Fusion Cosmic Brownie</h5>
+                <p class="card-text">
+                    Brownie de cacau 70% com gotas de neon de frutas vermelhas.
+                </p>
+                <p class="fw-bold text-success">R$ 9,50</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="border-item card bg-black text-light border border-purple h-100">
+                <img src="./src/images/croissant.jpg" class="card-img-top" alt="Glitch Croissant">
+                <div class="card-body">
+                <h5 class="card-title text-neon" style="color: #00CED1;">Glitch Croissant</h5>
+                <p class="card-text">
+                    Croissant folhado com recheio duplo de queijo cyber e geleia cítrica neon.
+                </p>
+                <p class="fw-bold text-success">R$ 11,00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <div class="space">
+        <h2 class="text-center text-neon" style="color: #8A2BE2;">
+            Nosso espaço
+        </h2>
+
+        <p class="lead text-center" style="color: #00FFF7;">
+            Produtos feitos somente com ingredientes de alta qualidade, com um toque de tecnologia e inivação. Feito por chefs de renome e humanos!
+        </p>
+
+        <div class="chefs-imgs">
+            <img src="./src/images/chefs.jpg" alt="Chefes do Café Cyberpunk" class="img-fluid mx-auto d-block mb-4" style="max-width: 30%;" />
+            <img src="./src/images/chefs-2.jpg" alt="Chefes do Café Cyberpunk" class="img-fluid mx-auto d-block mb-4" style="max-width: 30%;" />
+        </div>
+    </div>
+
+    <div class="retro">
+        <h2 class="text-center text-neon" style="color: #39ff14">
+            Você está em 2100 mas gostaria de provar um pouco do passado?
+        </h2>
+        <p class="lead text-center text-space" style="color: #39ff14;">
+            Temos uma área de jogos retro pra te levar por uma viagem no tempo! 
+        </p>
+        <div class="retro-images">
+            <img src="./src/images/retro-games.jpg" alt="Jogos retro" class="img-fluid mx-auto d-block mb-4" style="max-width: 30%;" />
+            <img src="./src/images/retro-games-2.jpg" alt="Jogos retro corredor" class="img-fluid mx-auto d-block mb-4" style="max-width: 30%;" />
+            <img src="./src/images/retro-games-3.jpg" alt="Jogos retro arcade" class="img-fluid mx-auto d-block mb-4" style="max-width: 25.5%;" />
+        </div>
+    </div>
+
+    <div class="localizacao container text-center py-5">
+        <h3 class="text-neon mb-3" style="color: #FF69B4;">Nossa Localização</h3>
+        <p style="color: #00FFFF; font-size: 1.2rem;">
+            Rua Neon Cyber, 1234 – Bairro Techno Distrito, Cidade Futuro, 21000-000
+        </p>
+        <p style="color: #00FFFF; font-size: 1.1rem;">
+            Aberto de segunda a sábado, das 08h às 22h
+        </p>
+
+        <div class="mapa mt-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.349718982957!2d139.6983827152591!3d35.69594918019111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd256fc3107%3A0xf9e4f00bb2cbd391!2sKabukicho%2C%20Shinjuku%20City%2C%20Tokyo%2C%20Japan!5e0!3m2!1sen!2sbr!4v1654381893863!5m2!1sen!2sbr"
+                width="50%"
+                height="300"
+                style="border: none; border-radius: 10px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+
+
+    <footer class="container text-center py-4" style="color: #ffe600;">
+        &copy; 2025 Café Cyberpunk - Todos os direitos reservados
+    </footer>
+
+    <!-- jQuery local -->
+    <script src="dist/libs/js/jquery.min.js"></script>
+    <!-- Bootstrap JS local -->
+    <script src="dist/libs/js/bootstrap.bundle.min.js"></script>
+    <!-- Seu JS customizado -->
+    <script src="src/js/main.js"></script>
+</body>
+</html>

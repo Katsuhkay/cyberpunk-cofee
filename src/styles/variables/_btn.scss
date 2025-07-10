@@ -1,0 +1,32 @@
+@use './cor' as cor;
+@use './neon' as neon;
+
+#menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 15px; /* para manter alinhamento horizontal */
+}
+
+#menu.aberto {
+    max-height: 2000px; /* suficiente para mostrar todo o conteúdo */
+    padding: 20px 15px;
+}
+
+.hero__btn {
+    background-color: cor.$neon-blue;
+    color: cor.$dark-bg;
+    border: 2px solid cor.$neon-blue;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    @include neon.box-neon(cor.$neon-blue);
+
+    &:hover {
+        background-color: cor.$neon-pink;
+        @include neon.box-neon(cor.$neon-pink);
+        border-color: cor.$neon-pink;
+    }
+}

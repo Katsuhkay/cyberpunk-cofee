@@ -1,0 +1,51 @@
+// src/styles/variables/_neon.scss
+
+@use 'cor' as *; // importa todas as variáveis de cor
+@use 'sass:color';
+
+// Sombreamento neon base
+$neon-glow: 0 0 5px, 0 0 10px, 0 0 20px;
+
+// Mixins
+
+@mixin text-neon($color) {
+    color: $color;
+    text-shadow: 
+        0 0 5px $color,
+        0 0 10px $color,
+        0 0 20px $color,
+        0 0 40px color.scale($color, $lightness: 10%);
+}
+
+@mixin box-neon($color) {
+    box-shadow:
+        0 0 5px $color,
+        0 0 10px $color,
+        0 0 20px $color,
+        0 0 40px color.scale($color, $lightness: 10%);
+}
+
+@mixin border-neon($color) {
+    border: 1px solid $color;
+    box-shadow:
+        0 0 5px $color,
+        0 0 10px $color;
+}
+
+@mixin button-neon($color) {
+    @include text-neon($color);
+    background-color: transparent;
+    border: 2px solid $color;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $color;
+        color: $dark-bg;
+        box-shadow:
+        0 0 10px $color,
+        0 0 20px $color,
+        0 0 40px $color;
+    }
+}
